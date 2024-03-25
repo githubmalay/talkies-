@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talkies</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Talkies</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="container mt-5">
+    <div class="container bg-white p-4">
+        <h2 class="text-center mb-4">Select Your Seat</h2>
+        <div class="big-screen mb-4">Big Screen</div>
+        <div id="seats-container" class="text-center">
+            <!-- Seats will be dynamically generated here -->
+        </div>
+        <div class="legend">
+            <div class="legend-item"><div class="seat silver"></div> Silver</div>
+            <div class="legend-item"><div class="seat gold"></div> Gold</div>
+            <div class="legend-item"><div class="seat platinum"></div> Platinum</div>
+        </div>
+        <a href="conform.html">
+        <button id="book-btn" class="btn btn-primary mt-3">Book Selected Seats</button></a>
+        
+</main>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const seatsContainer = document.getElementById("seats-container");
+        const totalSeats = 50;
+        const seatsPerRow = 12;
+        const silverSeatsCount = 12;
+        const goldSeatsCount = 24;
+        const platinumSeatsCount = Math.ceil(totalSeats / 3);
+
+        // Dynamically generate seats
+        for (let i = 1; i <= totalSeats; i++) {
+            const seat = document.createElement("div");
+            seat.className = "seat";
+            if (i <= silverSeatsCount) {
+                seat.classList.add("silver");
+            } else if (i <= silverSeatsCount + goldSeatsCount) {
+                seat.classList.add("gold");
+            } else {
+                seat.classList.add("platinum");
+            }
+            seat.textContent = i;
+            seat.addEventListener("click", function() {
+                this.classList.toggle("selected");
+            });
+            seatsContainer.appendChild(seat);
+
+            // Add line break after each row
+            if (i % seatsPerRow === 0) {
+                seatsContainer.appendChild(document.createElement("br"));
+            }
+        }
+
+        // Book selected seats
+        const bookButton = document.getElementById("book-btn");
+        bookButton.addEventListener("click", function() {
+            const selectedSeats = document.querySelectorAll(".seat.selected");
+            const selectedSeatNumbers = Array.from(selectedSeats).map(seat => seat.textContent);
+            alert("You have selected seats: " + selectedSeatNumbers.join(", "));
+        });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

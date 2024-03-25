@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talkies</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Talkies</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+<main>
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4">Select Movie, Date, and Showtime</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="movieSelect">Select Movie:</label>
+                                <select class="form-control" id="movieSelect">
+                                    <option>Select Movie</option>
+                                    <option>Kasoombo</option>
+                                    <option>Yodha</option>
+                                    <!-- Add more movie options as needed -->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="dateSelect">Select Date:</label>
+                                <input type="date" class="form-control" id="dateSelect">
+                            </div>
+                            <div class="form-group">
+                                <label for="showtimeSelect">Select Showtime:</label>
+                                <select class="form-control" id="showtimeSelect">
+                                    <option>Select Showtime</option>
+                                    <option>Today, 6:00 PM</option>
+                                    <option>Tomorrow, 9:00 PM</option>
+                                    <!-- Add more showtime options as needed -->
+                                </select>
+                            </div>
+                        </form>
+                        <a href="login.html">
+                        <button type="submit" class="btn btn-primary btn-block">Book Tickets</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-center mb-4">Upcoming Movies</h2>
+                <div class="container">
+                    <div class="upcoming-movies">
+                        <div class="upcoming-movie">
+                            <div class="image-container">
+                                <img src="movie1.jpg" alt="Movie 1">
+                            </div>
+                            <div class="details-container">
+                                <h5>KASOOMBO</h5>
+                                <p>Set amidst the picturesque landscapes of 14th-century Gujarat's Shetrunjay Hills, 'Kasoombo' transports audiences into a riveting historical drama that mirrors the pages of novel 'Amar Balidan.'</p>
+                                <p>2h 36m</p>
+                            </div>
+                        </div>
+                        <div class="upcoming-movie">
+                            <div class="image-container">
+                                <img src="movie2.jpg" alt="Movie 1">
+                            </div>
+                            <div class="details-container">
+                                <h5>YODHA</h5>
+                                <p>Yodha (transl. Warrior) is an upcoming Indian Hindi-language action thriller film written directed by Sagar Ambre and Pushkar Ojha, with produced by Hiroo Yash Johar, Karan Johar and Apoorva Mehta under the banner of Dharma Productions, The film stars Sidharth Malhotra, Raashii Khanna and Disha Patani</p>
+                                <p>130 minutes</p>
+                            </div>
+                        </div>
+                        <!-- Add more upcoming movies as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

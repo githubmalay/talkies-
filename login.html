@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #306396;
+        }
+        .container {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+            overflow: hidden;
+            background: #fff;
+        }
+        .left-side {
+            background-image: url('login.avif'); /* Replace with your image URL */
+            background-size: cover;
+            height: 50vh; /* Reduced height for smaller devices */
+        }
+        .right-side {
+            padding: 20px;
+        }
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto; /* Center the form horizontally */
+        }
+        .login-form .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Left Side with Image -->
+            <div class="col-md-6 left-side">
+                <!-- You can place any content or leave it empty -->
+            </div>
+            
+            <!-- Right Side with Login Form -->
+            <div class="col-md-6 right-side">
+                <div class="login-form">
+                    <h2 class="text-center mb-4">Login</h2>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password" required>
+                        </div>
+                    </form>
+                    <a href="seat select.html">
+                    <button type="submit" class="btn btn-primary btn-block">Login</button></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

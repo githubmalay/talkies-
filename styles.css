@@ -1,0 +1,224 @@
+/* Add your custom styles here */
+body{
+    background-color: rgba(141, 213, 213, 0.273);
+}
+
+.navbar-brand {
+    color: #f8f9fa !important; /* Light background color */
+  }
+
+  .navbar-nav .nav-link {
+    color: #f8f9fa !important; /* Light background color */
+  }
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.card-img-top {
+    max-width: 306px;
+    max-height: 392px;
+    /* height: 300px; */
+    object-fit: cover;
+    align-items: center;
+    padding: 10px;
+    /* margin-top: ; */
+}
+
+.landscape-card {
+    width: 100%;
+    margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+    .landscape-card {
+        width: 48%;
+        margin-right: 2%;
+    }
+    .landscape-card:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+@media (min-width: 992px) {
+    .landscape-card {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+.upcoming-movie {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.upcoming-movie .image-container {
+    flex: 0 0 40%;
+    margin-right: 20px;
+}
+.upcoming-movie .image-container img {
+    width: 100%;
+    height: auto;
+}
+.upcoming-movie .details-container {
+    flex: 0 0 60%;
+}
+.upcoming-movie .details-container h5 {
+    margin-top: 0;
+}
+
+
+.seat {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.silver { background-color: #f8f5f5; }
+.gold { background-color: #FFD700; }
+.platinum { background-color: #c5d1e1; }
+.seat.selected {
+    background-color: #007bff;
+    color: #fff;
+}
+.big-screen {
+    /* width: 400px; */
+    /* height: 200px; */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.legend {
+    float: right;
+    margin-top: 20px;
+}
+.legend-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+/* Add mobile responsiveness */
+@media (max-width: 576px) {
+    .container {
+      width: 100%;
+    }
+  
+    /* .seat {
+      /* width: 20px; 
+      /* height: 20px; 
+    } */
+  
+    .legend {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+
+  
+
+
+  header a.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+main.container {
+    margin-top: 50px;
+}
+.confirmation {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.confirmation h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+.confirmation p {
+    margin-bottom: 10px;
+}
+footer.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer.footer .container {
+    text-align: center;
+}
+
+
+
+
+main.container {
+    margin-top: 50px;
+}
+.section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.section h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+.form-group label {
+    font-weight: bold;
+}
+.footer{
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.ticket-collection {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.ticket-collection h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+.ticket-collection p {
+    margin-bottom: 10px;
+}
